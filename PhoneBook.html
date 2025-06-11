@@ -33,7 +33,21 @@
    <footer>
       <p>Created by Lara&Ahmad</p>
     </footer>
-    
+  
+     <!-- Popup for viewing/editing/adding contact -->
+  <div id="popupOverlay" class="popup hidden">
+    <div class ="popup-content">
+      <span id="closePopup" class="close-btn">&times;,</span>
+      <form id="contactForm">
+        <label>Name* <input type="text" id="nameInput" required> </label>
+        <label>Phone* <input type="text" id="phoneInput" required> </label>
+        <label>Address* <input type="text" id="addressInput" required> </label>
+        <label>Age* <input type="text" id="ageInput" required> </label>
+        <label>Image URL* <input type="text" id="imageUrlInput" required> </label>
+        <button type="submit" id="saveContactBtn">Save</button>
+      </form>
+    </div>
+  </div>
     
   
   
