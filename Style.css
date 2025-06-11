@@ -20,3 +20,10 @@ h1 {
   flex-wrap: wrap;
 }
 
+body{
+    font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #f0f2f5, #dfe9f3);
+  padding: 2rem;
+  color: #333;
+}
+
