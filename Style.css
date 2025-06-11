@@ -27,3 +27,10 @@ body{
   color: #333;
 }
 
+footer {
+  margin-top: 4rem;
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+}
+
