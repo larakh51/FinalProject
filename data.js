@@ -22,6 +22,15 @@ const contacts = [
     age: 26,
     imageUrl: "https://i.pravatar.cc/200?img=8",
   },
+  {
+    name: "Jivan Lord",
+    phone: "058-1112233",
+    address: "Akko",
+    age: 30,
+    imageUrl: "https://i.pravatar.cc/200?img=3",
+  },
+];
+    
     
     
     
