@@ -22,6 +22,32 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  addBtn.addEventListener("click" , () => {
+    form.reset();
+    popup.classList.remove("hidden");
+    form.onsubmit = (ev) => {
+      ev.preventDefault();
+      const newContact = {
+        name: document.getElementByld("nameInput").value,
+        phone: document.getElementById("phoneInput").value,
+        address: document.getElementById("addressInput").value,
+        age: document.getElementById("ageInput").value,
+        imageUrl:
+          document.getElementById("imageUrlInput").value ||
+          "https://i.pravatar.cc/200?u=" + Math.random(),
+      };
+      if (!newContact.name || !newContact.phone){
+        alert("Name and phone are required.");
+        return;
+      }
+      contacts.push(newContact);
+      renderContacts(contacts);
+      popup.classList.add("hidden");
+    };
+  });
+        
+        
+
   
                                 
 
