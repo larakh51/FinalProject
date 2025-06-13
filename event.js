@@ -64,6 +64,23 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementByld("imageUrlInput").value = contact.imageUrl;
 
       popup.classList.remove("hidden");
+
+      form.onsubmit = (ev) => {
+        ev.preventDefault();
+        contacts[index] = {
+          name: document.getElementByld("nameInput").value,
+          phone: document.getElementByld("phoneInput").value,
+          address: document.getElementByld("addressInput").value,
+          age: document.getElementByld("ageInput").value,
+          imageUrl: document.getElementByld("imageUrlInput").value ||
+              "https://i.pravatar.cc/200?u=" + Math.random(),
+          };
+        renderContacts(contacts);
+        popup.classList.add("hiddem");
+      };
+    }
+
+    
         
         
 
