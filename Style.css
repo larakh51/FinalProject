@@ -160,6 +160,41 @@ footer {
   margin-bottom: 1rem;
   font-size: 0.95rem;
 }
+
+.popup input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: 0.3rem;
+}
+
+.popup button[type="submit"] {
+  background-color: #1a237e;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.popup button[type="submit"]:hover {
+  background-color: #0d174a;
+}
+
+.hidden {
+  display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+}
+
+
+  
   
   
 
