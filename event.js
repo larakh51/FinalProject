@@ -80,6 +80,20 @@ document.addEventListener("DOMContentLoaded", () => {
       };
     }
 
+    if (e.target.classList.contains("vie-btn")){
+      const contact = contacts[index];
+      const html = `
+      <img src="${
+        contact.imageUrl
+      }"class="avatar" style="margin-bottom:1rem">
+      <h3>${contact.name}</h3>
+      <p>📞 ${contact.phone}</p>
+       ${contact.address ? `<p>📍 ${contact.address}</p>` : ""}
+       ${contact.age ? `<p>🎂 ${contact.age} years old</p>` : ""}
+      `;
+      
+      
+
     
         
         
