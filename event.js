@@ -45,6 +45,25 @@ document.addEventListener("DOMContentLoaded", () => {
       popup.classList.add("hidden");
     };
   });
+
+  document
+  .getElementByld("contactsContainer")
+  .addEventListener("click",(e) => {
+    const index = e.target.dataset.id;
+    if(e.target.classList.contains("delete-btn")) {
+      contacts.splice(index, 1);
+      renderContacts(contacts);
+    }
+
+    if(e.target.classList.contains("edit-btn")){
+      const contact = contacts[index];
+      document.getElementByld("nameInput").value = contact.name;
+      document.getElementByld("phoneInput").value = contact.phone;
+      document.getElementByld("addressInput").value = contact.address;
+      document.getElementByld("ageInput").value = contact.age;
+      document.getElementByld("imageUrlInput").value = contact.imageUrl;
+
+      popup.classList.remove("hidden");
         
         
 
