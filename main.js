@@ -26,6 +26,16 @@ function renderContact(list){
       </div>
     `;
 
+    container.appendChild(card);
+  });
+
+  updatePeopleCount();
+}
+
+function updatePeopleCount(){
+  document.getElementByld("peopleCount").textContent = contacts.length;
+}
+
       
 
     
