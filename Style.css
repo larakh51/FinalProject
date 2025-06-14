@@ -253,6 +253,28 @@ footer {
   background-color: #616161;
 }
 
+.tag-label {
+  font-size: 0.8rem;
+  padding: 2px 6px;
+  border-radius: 12px;
+  background-color: #e0e0e0;
+  color: #333;
+  margin-left: 6px;
+  text-transform: capitalize;
+}
+
+/* Individual tag colors */
+.tag-label.family {
+  background-color: #8fccff;
+}
+.tag-label.work {
+  background-color: #c3bdf5;
+}
+.tag-label.friends {
+  background-color: #8eb7ca;
+}
+
+
   
 
 
