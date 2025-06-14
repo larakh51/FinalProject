@@ -12,6 +12,13 @@ function renderContact(list){
   list.forEach((contact, index) => {
     const card = document.createElement("div");
     card.className = "contact-card";
+       card.className = "contact-card";
+    card.addEventListener("mouseover", () => {
+      card.classList.add("hovered");
+    });
+    card.addEventListener("mouseout", () => {
+      card.classList.remove("hovered");
+    });
 
     card.innerHTML =  `
       <img class="avatar" src="${contact.imageUrl}" alt="${contact.name}">
