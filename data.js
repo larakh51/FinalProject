@@ -7,6 +7,7 @@ const contacts = [
     address: "jerusalem",
     age: 24,
     imageUrl: "https://i.pravatar.cc/200?img=5",
+    tag:"family"
   },
   {
     name: "Andro Levi",
@@ -14,6 +15,7 @@ const contacts = [
     address: "Haifa",
     age: 28,
     imageUrl: "https://i.pravatar.cc/200?img=12",
+    tag:"work"
   },
   {
     name: "Jan Salman",
@@ -21,6 +23,7 @@ const contacts = [
     address: "Nazareth",
     age: 26,
     imageUrl: "https://i.pravatar.cc/200?img=8",
+    tag:"family"
   },
   {
     name: "Jivan Lord",
@@ -28,6 +31,7 @@ const contacts = [
     address: "Akko",
     age: 30,
     imageUrl: "https://i.pravatar.cc/200?img=3",
+    tag:"friends"
   },
 ];
     
