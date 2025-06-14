@@ -112,6 +112,14 @@ document.addEventListener("DOMContentLoaded", () => {
     detailsPopup.classList.add("hidden");
   };
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const cancelBtn = document.getElementById("cancelBtn");
+  if (cancelBtn) {
+    cancelBtn.onclick = () => {
+      document.getElementById("popupOverlay").classList.add("hidden");
+    };
+  }
+});
       
       
 
