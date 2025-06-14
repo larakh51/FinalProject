@@ -19,11 +19,13 @@ function renderContact(list){
     card.addEventListener("mouseout", () => {
       card.classList.remove("hovered");
     });
+    const tagLabel = contact.tag ? `<span class="tag-label ${contact.tag}">${contact.tag}</span>` : '';
+
 
     card.innerHTML =  `
       <img class="avatar" src="${contact.imageUrl}" alt="${contact.name}">
       <div class="info">
-        <div class="contact-name">${contact.name}</div>
+        <div class="contact-name">${contact.name}${tagLabel}</div>
         <div class="contact-phone">📞 ${contact.phone}</div>
         <div class="card-buttons">
           <button class="view-btn" data-id="${index}">ℹ️</button>
