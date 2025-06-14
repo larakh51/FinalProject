@@ -40,6 +40,13 @@ document.addEventListener("DOMContentLoaded", () => {
         alert("Name and phone are required.");
         return;
       }
+      // check for duplicate
+      const isDuplicate = contacts.some(c => c.name.toLowerCase() === newContact.name.toLowerCase());
+      if (isDuplicate) {
+        alert("A contact with this name already exists!");
+        return;
+      }
+
       contacts.push(newContact);
       renderContacts(contacts);
       popup.classList.add("hidden");
