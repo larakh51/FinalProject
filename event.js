@@ -27,6 +27,8 @@ document.addEventListener("DOMContentLoaded", () => {
     popup.classList.remove("hidden");
     form.onsubmit = (ev) => {
       ev.preventDefault();
+      const tag = document.getElementById("tagInput").value;
+
       const newContact = {
         name: document.getElementByld("nameInput").value,
         phone: document.getElementById("phoneInput").value,
@@ -35,6 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
         imageUrl:
           document.getElementById("imageUrlInput").value ||
           "https://i.pravatar.cc/200?u=" + Math.random(),
+        tag: tag
       };
       if (!newContact.name || !newContact.phone){
         alert("Name and phone are required.");
