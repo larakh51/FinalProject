@@ -91,6 +91,20 @@ document.addEventListener("DOMContentLoaded", () => {
        ${contact.address ? `<p>📍 ${contact.address}</p>` : ""}
        ${contact.age ? `<p>🎂 ${contact.age} years old</p>` : ""}
       `;
+
+      document.getElementByld("detailsContent").innerHTML= html;
+      detailsPopup.classList.remove("hidden");
+    }
+  });
+
+  document.getElementById("closePopup").onclick = () => {
+    popup.classList.add("hidden");
+  };
+
+  document.getElementById("closeDetails").onclick = () => {
+    detailsPopup.classList.add("hidden");
+  };
+});
       
       
 
