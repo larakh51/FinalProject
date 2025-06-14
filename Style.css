@@ -199,6 +199,10 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
+.contact-card.hovered {
+  background-color: rgb(144, 185, 238) !important;
+}
+
 .event-card {
   position: relative;
   overflow: hidden;
