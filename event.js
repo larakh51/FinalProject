@@ -147,6 +147,19 @@ document.querySelectorAll(".mood-option").forEach((el) => {
   });
 });
 
+const myCity = "Haifa"; 
+
+document.getElementById("findClosestBtn").addEventListener("click", () => {
+  const sameCityContacts = contacts.filter(c => c.address === myCity);
+  
+  if (sameCityContacts.length > 0) {
+    const name = sameCityContacts[0].name;
+    alert(`👋 Closest person to you is ${name} from ${myCity}`);
+  } else {
+    alert("😢 No one is in your city.");
+  }
+});
+
       
       
 
