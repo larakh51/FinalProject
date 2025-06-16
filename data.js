@@ -8,6 +8,7 @@ const contacts = [
     age: 24,
     imageUrl: "https://i.pravatar.cc/200?img=5",
     tag:"family"
+    birthDate: "2001-06-16",
   },
   {
     name: "Andro Levi",
@@ -16,6 +17,7 @@ const contacts = [
     age: 28,
     imageUrl: "https://i.pravatar.cc/200?img=12",
     tag:"work"
+    birthDate: "1997-08-10",
   },
   {
     name: "Jan Salman",
@@ -24,6 +26,8 @@ const contacts = [
     age: 26,
     imageUrl: "https://i.pravatar.cc/200?img=8",
     tag:"family"
+    birthDate: "1999-10-10",
+    
   },
   {
     name: "Jivan Lord",
@@ -32,6 +36,7 @@ const contacts = [
     age: 30,
     imageUrl: "https://i.pravatar.cc/200?img=3",
     tag:"friends"
+    birthDate: "1994-08-11",
   },
 ];
     
