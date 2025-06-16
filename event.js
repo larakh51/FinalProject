@@ -140,6 +140,13 @@ document.addEventListener("DOMContentLoaded", () => {
     };
   }
 });
+// 🎭 Mood selector (in header)
+document.querySelectorAll(".mood-option").forEach((el) => {
+  el.addEventListener("click", () => {
+    alert(`You are feeling ${el.dataset.mood} today! ❤️`);
+  });
+});
+
       
       
 
