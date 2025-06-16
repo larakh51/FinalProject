@@ -90,8 +90,17 @@ document.addEventListener("DOMContentLoaded", () => {
       };
     }
 
-    if (e.target.classList.contains("vie-btn")){
+    if (e.target.classList.contains("view-btn")){
       const contact = contacts[index];
+      const today = new Date();
+      const isBirthday =
+        contact.birthDate &&
+        new Date(contact.birthDate).getDate() === today.getDate() &&
+        new Date(contact.birthDate).getMonth() === today.getMonth();
+      if (isBirthday) {
+        alert(`🎉 Happy Birthday to ${contact.name}! 🎂`);
+      }
+
       const html = `
       <img src="${
         contact.imageUrl
