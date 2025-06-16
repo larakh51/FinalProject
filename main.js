@@ -10,6 +10,13 @@ function renderContact(list){
   container.innerHTML = "";
 
   list.forEach((contact, index) => {
+    const today = new Date();
+    const isBirthday =
+      contact.birthDate &&
+      new Date(contact.birthDate).getDate() === today.getDate() &&
+      new Date(contact.birthDate).getMonth() === today.getMonth();
+    const birthdayIcon = isBirthday ? '<span class="birthday">🎂</span>' : '';
+
     const card = document.createElement("div");
     card.className = "contact-card";
        card.className = "contact-card";
@@ -25,7 +32,7 @@ function renderContact(list){
     card.innerHTML =  `
       <img class="avatar" src="${contact.imageUrl}" alt="${contact.name}">
       <div class="info">
-        <div class="contact-name">${contact.name}${tagLabel}</div>
+        <div class="contact-name">${contact.name}${tagLabel}${birthdayIcon}</div>
         <div class="contact-phone">📞 ${contact.phone}</div>
         <div class="card-buttons">
           <button class="view-btn" data-id="${index}">ℹ️</button>
