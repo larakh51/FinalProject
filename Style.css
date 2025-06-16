@@ -245,6 +245,29 @@ footer {
   color: hotpink;
 }
 
+.mood-selector {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.moods {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.mood-option {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.mood-option:hover {
+  transform: scale(1.3);
+}
+
+
 
 
   
