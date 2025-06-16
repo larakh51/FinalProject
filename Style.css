@@ -202,6 +202,11 @@ footer {
   position: absolute;
   left: -9999px;
 }
+
+.contact-card.hovered {
+  background-color: rgb(144, 185, 238) !important;
+}
+
 .cancel-btn {
   background-color: #9e9e9e;
   color: white;
