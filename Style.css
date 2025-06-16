@@ -239,6 +239,12 @@ footer {
 .tag-label.friends {
   background-color: #8eb7ca;
 }
+.birthday {
+  margin-left: 6px;
+  font-size: 1.1rem;
+  color: hotpink;
+}
+
 
 
   
