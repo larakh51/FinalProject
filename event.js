@@ -102,13 +102,12 @@ document.addEventListener("DOMContentLoaded", () => {
         new Date(contact.birthDate).getMonth() === today.getMonth();
       if (isBirthday) {
         alert(`🎉 Happy Birthday to ${contact.name}! 🎂`);
+        confetti({
+          particleCount: 150,
+          spread: 80,
+          origin: { y: 0.6 }
+        });
       }
-      confetti({
-        particleCount: 150,
-        spread: 80,
-        origin: { y: 0.6 }
-});
-
 
       const html = `
       <img src="${
